@@ -10,23 +10,7 @@ import { v4 as uuidv4 } from "uuid";
 import { FilterButtonGroup } from "./src/components/FilterButtonGroup";
 import { ActionButtonGroup } from "./src/components/ActionButtonGroup";
 
-const todoList = [
-  {
-    id: 0,
-    title: "Do homework",
-    status: "new",
-  },
-  {
-    id: 1,
-    title: "Sleep",
-    status: "new",
-  },
-  {
-    id: 2,
-    title: "Eat",
-    status: "done",
-  },
-];
+const todoList = [];
 
 export default function App() {
   const [todoData, setTododata] = useState(todoList);
