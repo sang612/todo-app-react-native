@@ -1,2 +1,2 @@
 # todo-app-react-native
-# sangdeptrai
+# First react native project
