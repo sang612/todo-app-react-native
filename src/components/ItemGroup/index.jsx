@@ -1,4 +1,4 @@
-import { View, StyleSheet, ScrollView, Text } from "react-native";
+import { StyleSheet, ScrollView, Text } from "react-native";
 import { Item } from "../Item";
 
 export const ItemGroup = ({ todoList, handleChangeStatus }) => {

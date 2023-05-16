@@ -1,9 +1,7 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, ScrollView } from "react-native";
-import Cat from "./src/components/Cat";
+import { StyleSheet, View } from "react-native";
 import { Form } from "./src/components/Form";
 import { EnterButton } from "./src/components/Button";
-import { Item } from "./src/components/Item";
 import { ItemGroup } from "./src/components/ItemGroup";
 import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
