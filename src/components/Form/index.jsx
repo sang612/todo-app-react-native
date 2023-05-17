@@ -1,9 +1,11 @@
 import { TextInput, StyleSheet } from "react-native";
 
-export const Form = ({ setInputValue }) => {
+export const Form = ({ setInputValue, handleClickOK, inputValue }) => {
   return (
     <TextInput
       onChangeText={(newText) => setInputValue(newText)}
+      onSubmitEditing={handleClickOK}
+      value={inputValue}
       style={styles.input}
       placeholder="What you want to do...?"
     ></TextInput>

@@ -25,6 +25,7 @@ export default function App() {
       };
       return [...prev, newVal];
     });
+    setInputValue("");
   };
   const handleChangeStatus = (id) => {
     const updatedTodos = todoData.map((todo) =>
@@ -65,7 +66,11 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Form setInputValue={setInputValue} />
+      <Form
+        setInputValue={setInputValue}
+        handleClickOK={handleClickOK}
+        inputValue={inputValue}
+      />
       <EnterButton handleClickOK={handleClickOK} />
       <ActionButtonGroup changeAll={changeAll} />
       <ItemGroup
